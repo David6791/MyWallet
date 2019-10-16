@@ -1,0 +1,33 @@
+import React from 'react'
+
+// or less ideally
+const TransferForm = ({form, onChange,onSubmit}) => (
+    <form className="form-inline justify-content-center" action="" onSubmit={onSubmit}>
+        <div className="form-group mb-2">
+            <input 
+                type="text" 
+                className="form-control" 
+                placeholder="Description" 
+                name="description"
+                value={form.description}
+                onChange={onChange}
+            />
+        </div>
+        <div className="input-group mx-sm-2 mb-2">
+            <div className="input-group-prepend">
+                <div className="input-group-text">$</div>
+            </div>
+            <input 
+                type="text" 
+                className="form-control" 
+                name="amount"
+                value={form.amount}
+                onChange={onChange}
+            />
+        </div>
+        <button type="submit" className="btn btn-primary mb-2">
+            Add
+        </button>
+    </form>
+)
+export default TransferForm
