@@ -1,3 +1,3 @@
-const url = 'https://joaquinapplication.herokuapp.com/'
+const url = 'https://joaquinapplication.herokuapp.com'
 
 export default url
