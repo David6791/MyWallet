@@ -13,7 +13,7 @@ class TransferController extends Controller
         
         $wallet = Wallet::find($request->wallet_id);
         //return $wallet;
-        $wallet->money = (int($wallet->money)) + $request->amount;
+        $wallet->money = $wallet->money + $request->amount;
         $wallet->update();
 
         $transfer = new Transfer();
