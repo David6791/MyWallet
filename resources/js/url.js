@@ -1,3 +1,3 @@
-const url = 'http://localhost:8000'
+const url = 'https://joaquinapplication.herokuapp.com/'
 
 export default url
